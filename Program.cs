@@ -7,7 +7,7 @@ using System.Text;
 using System.Threading;
 using System.Threading.Tasks;
 
-namespace Earmad_bandit
+namespace OneArmed_Bandit
 {
     internal class Program
     {
@@ -82,8 +82,9 @@ namespace Earmad_bandit
 
             void FuncResult()
             {
-                string[] slots = new string[3];
-
+                string[] slots = { "X", "Y", "Z" };
+                
+                
 
             }
 

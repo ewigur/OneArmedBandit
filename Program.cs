@@ -27,7 +27,7 @@ namespace OneArmed_Bandit
             Console.WriteLine("Now it's time to pull the lever of the machine.\n Press 'P' to pull the lever...");
             FuncLever();
             FuncDelay();
-            FuncResult();
+            FuncSlotRoll();
 
             void FuncBet()
             {
@@ -80,10 +80,20 @@ namespace OneArmed_Bandit
 
             }
 
-            void FuncResult()
+            void FuncSlotRoll()
             {
-                string[] slots = { "X", "Y", "Z" };
+                string[] slots = {"X", "Y","Z"};
+                string[] slot_cylinder = new string[3];
                 
+                //Console.WriteLine("Detta är slots index värde:" + slots[index]);
+                
+                for (int i = 0;i < slots.Length;i++) 
+                {
+                    int index = rnd.Next(0, slots.Length);
+                    slot_cylinder[0] = slots[index];
+                    Console.WriteLine(slot_cylinder[0]);
+                }
+
                 
 
             }

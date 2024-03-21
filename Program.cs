@@ -112,14 +112,24 @@ namespace OneArmed_Bandit
 
         static int FuncSlotRoll(int stake, int oldWallet)
         {
-                int newWallet = 0;
-                Random rnd = new Random();
+            int newWallet = 0;
+            Random rnd = new Random();
+            
+            int[,] slot_cylinder = new int[3, 3];
+            
 
-                    string[] slot_cylinder = new string[3];
+
+
+                    /*string[] slot_cylinder = new string[9];
                     slot_cylinder[0] = "X";
                     slot_cylinder[1] = "Y";
                     slot_cylinder[2] = "Z";
-                    string [] slot_result = new string[3];
+
+                    slot_cylinder[0] = "X";
+                    slot_cylinder[1] = "Y";
+                    slot_cylinder[2] = "Z";*/
+
+            string [] slot_result = new string[9];
                     int index;
 
                     //Loop for randomly rolling slots

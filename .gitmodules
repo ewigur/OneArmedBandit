@@ -1,0 +1,3 @@
+[submodule "MultiArmedBandit"]
+	path = MultiArmedBandit
+	url = https://github.com/ewigur/OneArmedBandit.git
